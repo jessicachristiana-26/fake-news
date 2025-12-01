@@ -1,0 +1,153 @@
+/* RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6f3, #d6e8ff);
+  color: #111;
+}
+
+/* CENTER LAYOUT */
+.page-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  background: white;
+  border-bottom: 1px solid #e6e9ee;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ff59c7;
+}
+.tagline {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+}
+.nav-link {
+  color: #374151;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.nav-link:hover {
+  background: #f3e8ff;
+  color: #111;
+}
+.nav-active {
+  background: #ffd6f3;
+  font-weight: 600;
+}
+
+/* CONTENT */
+.content {
+  margin-top: 40px;
+  text-align: center;
+}
+.page-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+.lead {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* CARD */
+.card {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Input */
+textarea, input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Pink button */
+.btn-primary {
+  padding: 12px;
+  background: #ff59c7;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: #ff2daf;
+}
+
+/* History & Results */
+.history-table {
+  margin-top: 30px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+.history-table th, .history-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+/* verdict badge */
+.badge-real {
+  padding: 6px 12px;
+  background: #d4f7df;
+  color: #0f8a32;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.badge-hoax {
+  padding: 6px 12px;
+  background: #ffd8d8;
+  color: #d60000;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* progress bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+}

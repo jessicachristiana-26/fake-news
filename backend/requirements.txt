@@ -1,0 +1,11 @@
+flask
+flask-cors
+pymongo
+scikit-learn
+pandas
+numpy
+nltk
+langdetect
+joblib
+newspaper3k
+requests

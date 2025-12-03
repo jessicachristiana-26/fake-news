@@ -33,4 +33,4 @@ model.fit(X_train, y_train)
 joblib.dump(model, "fake_news_model.pkl")
 joblib.dump(vectorizer, "vectorizer.pkl")
 
-print("✅ Model training selesai dan file tersimpan!")
+print("Model training selesai dan file tersimpan!")
